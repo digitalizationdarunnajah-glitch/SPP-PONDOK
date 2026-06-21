@@ -281,7 +281,7 @@ export default function ReceiptView({ transaksi, config, onClose }: ReceiptViewP
               </div>
 
               <div className="grid grid-cols-3 gap-2 border-b border-white/5 pb-2">
-                <div className="text-slate-400 font-medium font-sans">NIS / Kelas</div>
+                <div className="text-slate-400 font-medium font-sans">NO Santri</div>
                 <div className="col-span-2 text-slate-100 font-mono">
                   {transaksi.siswaNis} <span className="text-white/20 font-sans mx-2">|</span> {transaksi.siswaKelas}
                 </div>
