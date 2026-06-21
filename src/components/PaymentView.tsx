@@ -330,8 +330,8 @@ export default function PaymentView({
       <div className="lg:col-span-5 space-y-6">
         
         <div className="glass glass-card p-5 rounded-2xl">
-          <h3 className="font-bold text-white text-base mb-1">Cari / Pilih Siswa</h3>
-          <p className="text-xs text-slate-350 mb-4">Masukkan NIS, Nama, atau Kelas siswa untuk memulai pembayaran</p>
+          <h3 className="font-bold text-white text-base mb-1">Cari / Pilih Santri</h3>
+          <p className="text-xs text-slate-350 mb-4">Masukkan NIS, Nama, atau Kelas santri untuk memulai pembayaran</p>
 
           {/* Custom Dropdown Search Input */}
           <div ref={dropdownRef} className="relative">
@@ -482,9 +482,9 @@ export default function PaymentView({
         ) : (
           <div className="bg-white/5 border-2 border-dashed border-white/10 rounded-2xl p-8 text-center flex flex-col items-center justify-center h-64 text-slate-400">
             <User className="size-10 text-slate-450 mb-3" />
-            <p className="text-sm font-semibold text-slate-300">Belum Ada Siswa Terpilih</p>
+            <p className="text-sm font-semibold text-slate-300">Belum Ada Santri Terpilih</p>
             <p className="text-xs mt-1 max-w-[200px] leading-relaxed text-slate-400">
-              Silakan cari dan pilih siswa pada kolom pencarian di atas untuk memproses loket pembayaran.
+              Silakan cari dan pilih santri pada kolom pencarian di atas untuk memproses loket pembayaran.
             </p>
           </div>
         )}
@@ -515,10 +515,10 @@ export default function PaymentView({
               <div className="bg-amber-500/10 border border-amber-500/30 rounded-xl p-4 space-y-2 text-left animate-fade-in">
                 <div className="flex items-center gap-2 text-amber-400">
                   <AlertCircle className="size-4 shrink-0" strokeWidth={2.5} />
-                  <span className="text-xs font-bold font-sans uppercase tracking-wider">Perhatian: Siswa Memiliki Tunggakan SPP!</span>
+                  <span className="text-xs font-bold font-sans uppercase tracking-wider">Perhatian: Santri Memiliki Tunggakan SPP!</span>
                 </div>
                 <p className="text-xs text-slate-300 font-medium">
-                  Siswa ini memiliki total sisa tunggakan SPP sebesar <b className="text-amber-400 font-extrabold font-mono text-xs">{formatRupiah(totalTunggakan)}</b> dari tagihan sebelumnya:
+                  Santri ini memiliki total sisa tunggakan SPP sebesar <b className="text-amber-400 font-extrabold font-mono text-xs">{formatRupiah(totalTunggakan)}</b> dari tagihan sebelumnya:
                 </p>
                 <div className="flex flex-wrap gap-1.5 pt-1">
                   {tunggakanList.map((item) => (
@@ -548,7 +548,7 @@ export default function PaymentView({
                   onChange={(e) => setJenisPembayaran(e.target.value as any)}
                   className="w-full px-3.5 py-2.5 bg-white/5 border border-white/10 text-white font-semibold rounded-xl text-xs focus:outline-none focus:ring-2 focus:ring-blue-500 disabled:opacity-50"
                 >
-                  <option value="SPP" className="bg-slate-900 border-none select-none text-white">SPP (Sumbangan Pembinaan Pendidikan)</option>
+                  <option value="SPP" className="bg-slate-900 border-none select-none text-white">SPP</option>
                   <option value="Uang Gedung" className="bg-slate-900 border-none select-none text-white">Uang Gedung / Pangkal</option>
                   <option value="Seragam" className="bg-slate-900 border-none select-none text-white">Seragam Sekolah</option>
                   <option value="Kegiatan" className="bg-slate-900 border-none select-none text-white">Kegiatan / Program Sekolah</option>
@@ -719,7 +719,7 @@ export default function PaymentView({
               <div className="bg-white/5 p-4 rounded-xl border border-white/10 space-y-3.5 animate-slide-up">
                 <div className="flex items-center justify-between">
                   <div className="flex flex-col text-left">
-                    <span className="text-xs font-bold text-slate-200">Siswa Membayar Kurang (Cicil / Sebagian)</span>
+                    <span className="text-xs font-bold text-slate-200">Santri Membayar Kurang (Cicil / Sebagian)</span>
                     <span className="text-[10px] text-slate-400">Aktifkan jika uang pembayaran yang diterima dari siswa kurang dari nominal tagihan</span>
                   </div>
                   <label className="relative inline-flex items-center cursor-pointer">
@@ -934,7 +934,7 @@ export default function PaymentView({
                 {/* Siswa */}
                 <div className="flex justify-between items-start gap-4 border-b border-white/5 pb-2.5">
                   <div>
-                    <span className="text-[10px] uppercase font-bold text-slate-500 block">Siswa Penerima</span>
+                    <span className="text-[10px] uppercase font-bold text-slate-500 block">Santri Penerima</span>
                     <span className="text-sm font-bold text-white">{pendingTransaction.siswaNama}</span>
                   </div>
                   <div className="text-right">
@@ -1027,7 +1027,7 @@ export default function PaymentView({
 
               {/* Informative message */}
               <div className="text-[11px] text-slate-400 leading-relaxed text-center">
-                Silakan cetak struk setelah konfirmasi untuk bukti cetak lunas kepada orang tua siswa.
+                Silakan cetak struk setelah konfirmasi untuk bukti cetak lunas kepada wali santri.
               </div>
             </div>
 
