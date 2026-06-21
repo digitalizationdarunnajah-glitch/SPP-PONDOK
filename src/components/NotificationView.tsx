@@ -438,7 +438,7 @@ export default function NotificationView({
             <Clock className="size-6" />
           </div>
           <div>
-            <span className="text-xs font-semibold text-slate-400 block">Siswa Menunggak SPP</span>
+            <span className="text-xs font-semibold text-slate-400 block">Santri Menunggak SPP</span>
             <span className="text-2xl font-bold font-mono text-white block mt-0.5">{countOverdueTotal} <span className="text-xs text-slate-400 font-sans font-medium">Siswa</span></span>
           </div>
         </div>
@@ -647,7 +647,7 @@ export default function NotificationView({
           
           <div className="flex flex-col sm:flex-row justify-between items-stretch sm:items-center gap-3 mb-4">
             <div>
-              <h4 className="font-bold text-white text-sm">Daftar Siswa dengan Iuran Belum Lunas</h4>
+              <h4 className="font-bold text-white text-sm">Daftar Santri dengan Iuran Belum Lunas</h4>
               <p className="text-xs text-slate-400 mt-0.5">Ditemukan {searchedOverdueList.length} wali murid perlu dihubungi</p>
             </div>
 
@@ -667,7 +667,7 @@ export default function NotificationView({
             <table className="w-full text-left border-collapse text-xs">
               <thead>
                 <tr className="border-b border-white/5 text-slate-450 font-bold uppercase bg-white/5">
-                  <th className="py-2.5 px-3">Nama Siswa</th>
+                  <th className="py-2.5 px-3">Nama Santri</th>
                   <th className="py-2.5 px-3">Kelas</th>
                   <th className="py-2.5 px-3">Kontak Orang Tua</th>
                   <th className="py-2.5 px-3 text-right">Tunggakan SPP</th>
@@ -731,7 +731,7 @@ export default function NotificationView({
                   <tr>
                     <td colSpan={5} className="py-12 text-center text-slate-450 italic">
                       <BookOpen className="size-6 mx-auto text-slate-500 mb-2" />
-                      Tidak ada tunggakan pembayaran siswa yang ditemukan.
+                      Tidak ada tunggakan pembayaran santri yang ditemukan.
                     </td>
                   </tr>
                 )}
@@ -759,7 +759,7 @@ export default function NotificationView({
             <thead>
               <tr className="border-b border-white/5 text-slate-450 font-bold uppercase bg-white/5">
                 <th className="py-2.5 px-3">Tanggal Kirim</th>
-                <th className="py-2.5 px-3">Nama Siswa</th>
+                <th className="py-2.5 px-3">Nama Santri</th>
                 <th className="py-2.5 px-3">Metode / Media</th>
                 <th className="py-2.5 px-3">Alamat / Nomor Tujuan</th>
                 <th className="py-2.5 px-3">Kalimat Isi Notifikasi</th>
