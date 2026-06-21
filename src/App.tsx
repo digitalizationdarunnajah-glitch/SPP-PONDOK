@@ -622,10 +622,10 @@ export default function App() {
                 ? "bg-white/5 text-slate-305 hover:text-white hover:bg-white/10 border-white/10" 
                 : "bg-slate-100 text-slate-700 hover:bg-slate-200 border-slate-200"
             }`}
-            title="Kelola Profil Sekolah"
+            title="Kelola Profil Pondok"
           >
             <Sliders className="size-4" />
-            <span className="hidden md:inline">Profil Sekolah</span>
+            <span className="hidden md:inline">Profil Pondok</span>
           </button>
 
         </div>
@@ -681,7 +681,7 @@ export default function App() {
               }`}
             >
               <Users className="size-4.5" />
-              <span>Data Siswa & Tagihan</span>
+              <span>Data Santri & Tagihan</span>
             </button>
 
             {/* Tab: Manajemen Biaya */}
@@ -720,7 +720,7 @@ export default function App() {
               }`}
             >
               <FileText className="size-4.5" />
-              <span>Laporan Jurnal Kas</span>
+              <span>Laporan Jurnal Keuangan</span>
             </button>
 
             {/* Tab 5 */}
