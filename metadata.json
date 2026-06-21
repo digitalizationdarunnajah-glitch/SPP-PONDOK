@@ -1,6 +1,6 @@
 {
-  "name": "Penerimaan Kas Sekolah",
-  "description": "Aplikasi penerimaan kas uang sekolah dengan cetak kuitansi otomatis, laporan bulanan, dan dashboard pemantauan status pembayaran terintegrasi Google Sheets.",
+  "name": "Sistem Keuangan Pondok",
+  "description": "Aplikasi keuangan pondok dengan cetak kuitansi otomatis, laporan bulanan, dan dashboard pemantauan status pembayaran terintegrasi.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
