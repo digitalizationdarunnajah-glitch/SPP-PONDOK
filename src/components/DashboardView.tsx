@@ -133,9 +133,9 @@ export default function DashboardView({
           <span className="bg-blue-500/20 text-blue-350 text-[10px] uppercase font-bold tracking-widest px-2.5 py-1 rounded-full border border-blue-550/30">
             DASHBOARD UTAMA
           </span>
-          <h2 className="text-xl md:text-2xl font-bold tracking-tight">Selamat Datang di Portal Kasir Sekolah</h2>
+          <h2 className="text-xl md:text-2xl font-bold tracking-tight">Selamat Datang di Bendahara Pondok Darunnajah</h2>
           <p className="text-sm text-slate-350 font-sans">
-            Sistem Pemantauan Pembayaran Siswa Terintegrasi & Cetak Kuitansi Otomatis • <b>{config.namaSekolah}</b>
+            Sistem Pemantauan Pembayaran Santri & Cetak Kuitansi Otomatis • <b>{config.namaSekolah}</b>
           </p>
         </div>
         <button
@@ -206,9 +206,9 @@ export default function DashboardView({
             <DollarSign className="size-6" />
           </div>
           <div className="space-y-0.5">
-            <p className="text-xs font-semibold text-slate-450 uppercase tracking-wider">Total Penerimaan Kas</p>
+            <p className="text-xs font-semibold text-slate-450 uppercase tracking-wider">Total Penerimaan</p>
             <h4 className="text-xl font-bold font-sans text-white tracking-tight">{formatRupiah(totalPenerimaan)}</h4>
-            <p className="text-[10px] text-slate-400">Kas Lebih Terstruktur</p>
+            <p className="text-[10px] text-slate-400">Lebih Terstruktur</p>
           </div>
         </div>
 
@@ -253,7 +253,7 @@ export default function DashboardView({
           <div className="space-y-0.5">
             <p className="text-xs font-semibold text-slate-450 uppercase tracking-wider font-sans">Belum Bayar SPP</p>
             <h4 className="text-xl font-bold text-white tracking-tight">
-              {siswaBelumBulanIni} <span className="text-slate-400 text-sm font-normal">Siswa</span>
+              {siswaBelumBulanIni} <span className="text-slate-400 text-sm font-normal">Santri</span>
             </h4>
             <p className="text-[10px] text-amber-400 font-medium">Bulan berjalan: Mei 2026</p>
           </div>
@@ -342,7 +342,7 @@ export default function DashboardView({
           </div>
           
           <div className="border-t border-white/5 pt-3 flex justify-between items-center text-xs text-slate-450 font-sans">
-            <span>Siswa yang bayar cash berkontribusi terbesar di periode ini.</span>
+            <span>Santri yang bayar cash berkontribusi terbesar di periode ini.</span>
             <span className="flex items-center gap-1.5"><Calendar className="size-3 text-blue-400" strokeWidth={2.5} /> Januari - Juni 2026</span>
           </div>
         </div>
@@ -384,7 +384,7 @@ export default function DashboardView({
           </div>
 
           <div className="border-t border-white/5 pt-3 text-[11px] text-slate-400 mt-4 leading-relaxed font-sans">
-            Penyortiran real-time berdasarkan data transaksi kuitansi kasir sekolah yang aktif.
+            Penyortiran real-time berdasarkan data transaksi kuitansi bendahara pondok yang aktif.
           </div>
         </div>
 
@@ -397,7 +397,7 @@ export default function DashboardView({
         <div className="glass glass-card rounded-2xl p-5">
           <div className="space-y-1">
             <h3 className="font-bold text-white">Status Registrasi SPP Bulanan</h3>
-            <p className="text-xs text-slate-400">Pilih kelas siswa demi validasi status detail pembayaran berjalan</p>
+            <p className="text-xs text-slate-400">Pilih santri demi validasi status detail pembayaran berjalan</p>
           </div>
 
           {/* Quick Select Filter */}
@@ -417,17 +417,17 @@ export default function DashboardView({
 
           <div className="bg-white/5 rounded-xl p-4 mt-4 space-y-3 border border-white/10">
             <div className="flex justify-between items-center text-sm">
-              <span className="text-slate-400">Jumlah Siswa</span>
+              <span className="text-slate-400">Jumlah Santri</span>
               <span className="font-bold text-slate-200">{filteredTotal} Anak</span>
             </div>
             
             <div className="flex justify-between items-center text-sm">
-              <span className="text-slate-400">Siswa Lunas SPP</span>
+              <span className="text-slate-400">Santri Lunas SPP</span>
               <span className="font-bold text-emerald-400">{filteredLunas} Lunas</span>
             </div>
 
             <div className="flex justify-between items-center text-sm">
-              <span className="text-slate-400">Siswa Menunggak</span>
+              <span className="text-slate-400">Santri Menunggak</span>
               <span className="font-bold text-amber-400">{filteredBelumPay} Siswa</span>
             </div>
 
@@ -456,7 +456,7 @@ export default function DashboardView({
                 return (
                   <div className="mt-4 border-t border-white/10 pt-4 space-y-2 text-left">
                     <span className="text-xs font-bold text-amber-500 uppercase tracking-wider block">
-                      Siswa Belum Bayar Bulan Ini ({unpaid.length})
+                      Santri Belum Bayar Bulan Ini ({unpaid.length})
                     </span>
                     <div className="max-h-56 overflow-y-auto space-y-2 pr-1 scrollbar-thin">
                       {unpaid.map((s) => {
@@ -493,7 +493,7 @@ export default function DashboardView({
               } else {
                 return (
                   <div className="mt-4 border-t border-white/10 pt-4 text-center">
-                    <span className="text-xs text-emerald-400 font-semibold">🎉 Semua siswa di kelas ini lunas bulan ini!</span>
+                    <span className="text-xs text-emerald-400 font-semibold">🎉 Semua santri di kelas ini lunas bulan ini!</span>
                   </div>
                 );
               }
@@ -524,7 +524,7 @@ export default function DashboardView({
                 <thead>
                   <tr className="border-b border-white/10 text-slate-300 text-xs font-semibold uppercase tracking-wider bg-white/10">
                     <th className="py-2.5 px-3">No. Jurnal</th>
-                    <th className="py-2.5 px-3">Siswa / Kelas</th>
+                    <th className="py-2.5 px-3">Santri / Kelas</th>
                     <th className="py-2.5 px-3">Jenis Pembayaran</th>
                     <th className="py-2.5 px-3 text-right">Nominal</th>
                     <th className="py-2.5 px-3 text-center">Aksi</th>
