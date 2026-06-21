@@ -60,7 +60,7 @@ export default function LoginView({ onLoginSuccess, config, isDark }: LoginViewP
             {config.namaSekolah || "SMA Nusantara Mandiri"}
           </h1>
           <p className={`text-xs mt-1 font-semibold uppercase tracking-wider transition-colors duration-300 ${isDark ? "text-slate-400" : "text-slate-500"}`}>
-            Sistem Kasir Penerimaan & SPP Sekolah
+            Sistem Pembayaran Pondok Pesantren Darunnajah
           </p>
         </div>
 
@@ -154,7 +154,7 @@ export default function LoginView({ onLoginSuccess, config, isDark }: LoginViewP
 
         {/* Footer info */}
         <div className="text-center mt-6 text-[10px] text-slate-400 font-medium animate-fade-in">
-          Sistem Keuangan Kasir & SPP Sekolah v1.0. All Rights Reserved.
+          Sistem Keuangan & SPP Pondok v1.0. All Rights Reserved.
         </div>
 
       </div>
