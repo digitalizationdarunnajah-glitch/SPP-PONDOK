@@ -567,7 +567,7 @@ export default function App() {
           <div>
             <h1 className={`font-extrabold text-sm tracking-tight transition-colors duration-300 ${isDark ? "text-white" : "text-slate-900"}`}>{config.namaSekolah}</h1>
             <p className={`text-[10px] font-semibold uppercase tracking-wider flex items-center gap-1 transition-colors duration-300 ${isDark ? "text-slate-305" : "text-slate-500"}`}>
-              <span>Sistem Kasir Penerimaan Sekolah</span>
+              <span>Sistem Keuangan Pondok Darunnajah</span>
               {connectionStatus === 'connected' ? (
                 <span className="text-emerald-400 font-black flex items-center gap-1"><span className="w-1.5 h-1.5 bg-emerald-450 rounded-full inline-block animate-pulse"></span> Sheets Active</span>
               ) : (
