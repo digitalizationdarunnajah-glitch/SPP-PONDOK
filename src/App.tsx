@@ -750,8 +750,8 @@ export default function App() {
 
           {/* Quick Footer inside desktop sidebar */}
           <div className={`hidden md:block pt-4 border-t px-3 text-[10px] font-sans leading-relaxed transition-colors ${isDark ? "border-white/10 text-slate-400" : "border-slate-200 text-slate-500"}`}>
-            <p className={`font-semibold ${isDark ? "text-slate-300" : "text-slate-800"}`}>SMA Nusantara Mandiri v1.0</p>
-            <p className="mt-0.5">Sistem Kasir Offline-First Terintegrasi Google Sheet.</p>
+            <p className={`font-semibold ${isDark ? "text-slate-300" : "text-slate-800"}`}>Pondok Pesantren Darunnajah</p>
+            <p className="mt-0.5">Sistem Bendahara Pondok Pesantren Darunnajah.</p>
           </div>
 
         </aside>
@@ -844,7 +844,7 @@ export default function App() {
           <div className="bg-slate-900/90 backdrop-blur-xl rounded-2xl w-full max-w-md shadow-2xl border border-white/15 overflow-hidden text-slate-100">
             
             <div className="bg-white/5 px-6 py-4 border-b border-white/10 flex items-center justify-between">
-              <h3 className="font-bold text-white text-sm">Kelola Profil Sekolah & Kasir</h3>
+              <h3 className="font-bold text-white text-sm">Kelola Profil Pondok</h3>
               <button 
                 onClick={() => setSchoolSettingsOpen(false)}
                 className="p-1 hover:bg-white/10 rounded-full transition-colors text-slate-300 hover:text-white"
@@ -857,7 +857,7 @@ export default function App() {
               
               {/* Logo Sekolah Upload */}
               <div className="space-y-1 bg-white/5 p-3 rounded-xl border border-white/5">
-                <label className="text-xs font-bold text-slate-300 block text-left">Logo Lembaga / Sekolah</label>
+                <label className="text-xs font-bold text-slate-300 block text-left">Logo Pesantren</label>
                 <div className="flex items-center gap-4 mt-1.5">
                   {setOpenLogo ? (
                     <div className="relative group shrink-0">
@@ -912,7 +912,7 @@ export default function App() {
               </div>
 
               <div className="space-y-1">
-                <label className="text-xs font-bold text-slate-300">Nama Lembaga / Sekolah</label>
+                <label className="text-xs font-bold text-slate-300">Nama Pondok Pesanten</label>
                 <input
                   type="text"
                   required
@@ -997,7 +997,7 @@ export default function App() {
                 </div>
 
                 <div className="space-y-1 mt-2">
-                  <label className="text-xs font-bold text-slate-305 text-left block">Merchant ID (Akurasi QRIS Statis Sekolah)</label>
+                  <label className="text-xs font-bold text-slate-305 text-left block">Merchant ID (Akurasi QRIS</label>
                   <input
                     type="text"
                     placeholder="Contoh: ID1020260531002 atau MID-987654321"
